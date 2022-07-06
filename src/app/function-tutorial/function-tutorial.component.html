@@ -4,4 +4,4 @@
 <input type="number" #second />
 <button (click)="additionNumber(first.value, second.value)">Addtion</button>
 
-<h1 (mouseover)="hoverover()" #hoverValue>Hover over the value</h1> 
+<h1 (mouseover)="hoverover()" [style.color]="textColor" #hoverValue>Hover over the value</h1> 

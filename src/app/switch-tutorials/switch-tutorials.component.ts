@@ -12,6 +12,6 @@ export class SwitchTutorialsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  color='green';
+  color;
 
 }

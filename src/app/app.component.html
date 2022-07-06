@@ -1,31 +1,68 @@
 <h2>Angular project {{title}}</h2>
 <h1>------------------------------------------------------------------------------------------------------</h1>
-<app-interpolation-tutorial></app-interpolation-tutorial>
-<h3>General Important commands</h3>
 <ul>
-    <li>ng g c "compoment name" : To generate new component</li>
-    <li>ng g m "module name" : To create new module</li>
-    <li>ng g c "class name" : To create a class</li>
+    <li>
+        <a routerLink="">Home</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="interpoaltion">Interpolation Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="module">Module Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="function">Function Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="protertyBinding">Property Binding Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="ifElse">If Else Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="switch">switch Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="dynamic">Dynamic Style Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="toggle">Toggle Element Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="twoway">Two way binding Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="pipes">Pipes Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="template">Template data driven Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="reactive">Reactive form Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="reactiveValidate">Reactive form Validation Tutorials</a>
+    </li>
+    <br>
+    <li>
+        <a routerLink="directive">Directive Tutorials</a>
+    </li>
 </ul>
-<h3>Definition of Component and Modules</h3>
-<h5>Component are the smaller part of application and it can be a part of module. Module is the part of the application suppose
-    we have to make h user authentication inside that there are different component eg: userlogin, userlogout, uservalidation, etc
-    and all the above example comes under the module.
-</h5>
 <h1>------------------------------------------------------------------------------------------------------</h1>
-<h4><app-module-component></app-module-component></h4>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-function-tutorial></app-function-tutorial>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-property-binding></app-property-binding>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-if-else-tutorials></app-if-else-tutorials>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-switch-tutorials></app-switch-tutorials>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-dynamic-style></app-dynamic-style>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-toggle-element></app-toggle-element>
+<router-outlet></router-outlet>
 <h1>------------------------------------------------------------------------------------------------------</h1>
 <app-parent-to-child [item]="data"></app-parent-to-child>
 <button (click)="randomNumber()">Random number</button>
@@ -36,16 +73,4 @@
 <app-parent-to-child [parentDataValue]="userDetails">Send data to the child componet on click</app-parent-to-child>
 <h1>------------------------------------------------------------------------------------------------------</h1>
 <h1>{{dataValue}}</h1>
-<app-child-to-parent (updateDataEvent)="updateValue($event)"></app-child-to-parent>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-two-way-binding></app-two-way-binding>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-pipes-tutorials></app-pipes-tutorials>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-template-driven-tutorial></app-template-driven-tutorial>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-reactive-form></app-reactive-form>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-reactive-validation></app-reactive-validation>
-<h1>------------------------------------------------------------------------------------------------------</h1>
-<app-directive-tut></app-directive-tut>
+ <app-child-to-parent (updateDataEvent)="updateValue($event)"></app-child-to-parent>

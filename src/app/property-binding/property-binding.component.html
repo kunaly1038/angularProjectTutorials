@@ -1,5 +1,6 @@
 <h2>property-binding works!</h2>
-<input type="text" [disabled]=status>
+<input type="text" [disabled]=status [(ngModel)]="textDisplay">
 <input type="text" [disabled]=status2>
 <button type="button" [disabled]=status3>disabled button</button>
 
+<h1>{{textDisplay}}</h1>

@@ -5,12 +5,22 @@
 <button class="colorvalue">-</button>
 <button class="colorvalue">/</button>
 <button class="colorvalue">*</button> -->
+<ul>
+    <li>blue</li>
+    <li>green</li>
+    <li>yellow</li>
+    <li>gray</li>
+    <li>blue</li>
+    <li>red</li>
+</ul>
+<input type="text" [(ngModel)]="color">
 <div [ngSwitch]="color">
     <div *ngSwitchCase="'blue'" style="color: blue">output</div>
     <div *ngSwitchCase="'green'" style="color:green">output</div>
     <div *ngSwitchCase="'yellow'" style="color:yellow" >output</div>
     <div *ngSwitchCase="'gray'" style="color:gray">output</div>
-    <div *ngSwitchCase="'blue'" style="color:blue">output</div>
+    <div *ngSwitchCase="'red'" style="color:red">output</div>
+    <div *ngSwitchDefault style="color:rgba(0, 0, 0, 0.231)">output</div>
 
-    <div *ngSwitchDefault>error</div>
+    <!-- <div *ngSwitchDefault>error</div> -->
 </div>

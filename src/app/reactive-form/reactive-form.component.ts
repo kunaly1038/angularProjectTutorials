@@ -13,6 +13,7 @@ export class ReactiveFormComponent implements OnInit {
   ngOnInit(): void {
   }
   formValue:any= null;
+  formValue2:any= null;
 
   loginForm = new FormGroup({
     user:new FormControl(''),
@@ -22,5 +23,6 @@ export class ReactiveFormComponent implements OnInit {
   loginUser(){
     console.warn(this.loginForm.value)
     this.formValue= this.loginForm.value.user;
+    this.formValue2= this.loginForm.value.password;
   }
 }

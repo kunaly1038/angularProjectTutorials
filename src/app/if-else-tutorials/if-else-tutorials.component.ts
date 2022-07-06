@@ -12,10 +12,27 @@ export class IfElseTutorialsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-status : Boolean= false;
+status: Boolean=true;
 status2 : String= 'no';
 colorType = 'green'
 count = 0;
+
+changeStatus(){
+  if(this.status){
+    this.status= false;
+  }else{
+    this.status=true;
+  }
+}
+
+changeStatus2(){
+  if(this.status2=='no'){
+    this.status2= 'yes';
+  }else{
+    this.status2='no';
+  }
+}
+
  singleClick(colorValue:string){
     if(colorValue==='red'){
       this.colorType='red';

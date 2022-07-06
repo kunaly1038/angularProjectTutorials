@@ -21,6 +21,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveValidationComponent } from './reactive-validation/reactive-validation.component';
 import { RedElDirectiveDirective } from './red-el-directive.directive';
 import { DirectiveTutComponent } from './directive-tut/directive-tut.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { DirectiveTutComponent } from './directive-tut/directive-tut.component';
     ReactiveValidationComponent,
     RedElDirectiveDirective,
     DirectiveTutComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

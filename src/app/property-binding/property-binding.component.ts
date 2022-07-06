@@ -16,7 +16,6 @@ export class PropertyBindingComponent implements OnInit {
   status2 = true;
   status3 = true;
 
-
-
+  textDisplay;
 
 }

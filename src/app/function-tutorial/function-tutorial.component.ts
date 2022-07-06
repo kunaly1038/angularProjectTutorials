@@ -25,7 +25,9 @@ export class FunctionTutorialComponent implements OnInit {
     console.table(value)
   }
 
+  textColor = null;
   hoverover(){
+    this.textColor = 'red';
     console.log("test")
   }
 }

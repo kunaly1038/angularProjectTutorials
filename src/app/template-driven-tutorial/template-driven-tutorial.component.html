@@ -1,0 +1,10 @@
+<p>template-driven-tutorial works!</p>
+<form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+    <input type="text" placeholder="Enter you name" name="name" ngModel>
+    <input type="password" placeholder="Enter you password" name="passowrd" ngModel>
+    <button>Login</button>
+</form>
+
+<button (click)="userLogin(loginForm.value)">OutsideLogin</button>
+
+<h1>Your name: {{name}} and Password: {{password}}</h1>

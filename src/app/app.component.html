@@ -1,0 +1,51 @@
+<h2>Angular project {{title}}</h2>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-interpolation-tutorial></app-interpolation-tutorial>
+<h3>General Important commands</h3>
+<ul>
+    <li>ng g c "compoment name" : To generate new component</li>
+    <li>ng g m "module name" : To create new module</li>
+    <li>ng g c "class name" : To create a class</li>
+</ul>
+<h3>Definition of Component and Modules</h3>
+<h5>Component are the smaller part of application and it can be a part of module. Module is the part of the application suppose
+    we have to make h user authentication inside that there are different component eg: userlogin, userlogout, uservalidation, etc
+    and all the above example comes under the module.
+</h5>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<h4><app-module-component></app-module-component></h4>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-function-tutorial></app-function-tutorial>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-property-binding></app-property-binding>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-if-else-tutorials></app-if-else-tutorials>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-switch-tutorials></app-switch-tutorials>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-dynamic-style></app-dynamic-style>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-toggle-element></app-toggle-element>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-parent-to-child [item]="data"></app-parent-to-child>
+<button (click)="randomNumber()">Random number</button>
+<ul *ngFor="let item of userDetails">
+    <app-parent-to-child [parentData] = "item"></app-parent-to-child>
+</ul>  
+<h1>{{userDetails | json}}</h1>
+<app-parent-to-child [parentDataValue]="userDetails">Send data to the child componet on click</app-parent-to-child>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<h1>{{dataValue}}</h1>
+<app-child-to-parent (updateDataEvent)="updateValue($event)"></app-child-to-parent>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-two-way-binding></app-two-way-binding>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-pipes-tutorials></app-pipes-tutorials>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-template-driven-tutorial></app-template-driven-tutorial>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-reactive-form></app-reactive-form>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-reactive-validation></app-reactive-validation>
+<h1>------------------------------------------------------------------------------------------------------</h1>
+<app-directive-tut></app-directive-tut>

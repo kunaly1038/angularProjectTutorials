@@ -1,0 +1,16 @@
+<h1>switch-tutorials works!</h1>
+<!-- <input type="text" #first>
+<input type="text" #second>
+<button class="colorvalue">+</button>
+<button class="colorvalue">-</button>
+<button class="colorvalue">/</button>
+<button class="colorvalue">*</button> -->
+<div [ngSwitch]="color">
+    <div *ngSwitchCase="'blue'" style="color: blue">output</div>
+    <div *ngSwitchCase="'green'" style="color:green">output</div>
+    <div *ngSwitchCase="'yellow'" style="color:yellow" >output</div>
+    <div *ngSwitchCase="'gray'" style="color:gray">output</div>
+    <div *ngSwitchCase="'blue'" style="color:blue">output</div>
+
+    <div *ngSwitchDefault>error</div>
+</div>

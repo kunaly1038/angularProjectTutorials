@@ -1,0 +1,30 @@
+<h2>if-else-tutorials works!</h2>
+<h2 *ngIf="status else elseValue">
+    If condition
+</h2>
+<ng-template #elseValue>
+    <h1>Else condition</h1>
+</ng-template>
+
+<h2 *ngIf="status2=='no', then noValue else yesValue"></h2>
+<ng-template #noValue><h1>No value template</h1></ng-template>
+<ng-template #yesValue><h1> value template</h1></ng-template>
+
+
+<ng-template [ngIf]="colorType==='green'">
+    <h1 style="color:green">Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="colorType==='red'">
+    <h1 style="color:red">Color</h1>
+</ng-template>
+
+<ng-template [ngIf]="colorType==='blue'">
+    <h1 style="color:blue">Color</h1>
+</ng-template>
+
+
+<button type="submit" (click)="singleClick('blue')">blue</button>
+<button type="submit" (click)="singleClick('green')">green</button>
+<button type="submit" (click)="singleClick('red')">red</button>
+
